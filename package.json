@@ -19,10 +19,10 @@
   "dependencies": {
     "gulp": "^4.0.2"
   },
-  "browserlist": [
+  "browserslist": [
     "last 1 version",
     "> 1%",
-    "maintained node version",
+    "maintained node versions",
     "not dead"
   ]
 }
