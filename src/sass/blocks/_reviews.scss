@@ -1,17 +1,19 @@
 .reviews {
+    &__wripper {
+        padding: 70px 0;
+    }
     &__block {
         display: flex;
         margin: 0 auto;
-        width: 881px;
-        &:nth-child(2) {
-            margin-top: 70px;
-        }
-        &:nth-last-child(1) {
-            margin-bottom: 71px;
-        }
+        max-width: 881px;
     }
     &__photo {
         display: inline-block;
+        max-width: 169px;
+        max-height: 169px;
+        img {
+            width: 100%;
+        }
     }
     &__name {
         font-size: 18px;
@@ -31,12 +33,13 @@
         margin-top: 19px;
     }
     hr {
-        width: 940px;
+        max-width: 940px;
         height: 1px;
         background-color: #f6f6f6;
         margin: 48px 0 53px 0;
     }
     &__text {
         margin-left: 62px;
+        max-width: 650px;
     }
 }
