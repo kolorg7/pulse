@@ -1,5 +1,42 @@
 @media screen and ( max-width: 1200px) {
-
+    .button {
+        &:hover {
+            width: 150px;
+            height: 30px;
+            font-size: 12px;
+            box-shadow: none;
+        }
+        &_main {
+            &:hover {
+                width: 300px;
+                height: 50px;
+                font-size: 16px;
+                box-shadow: none;
+            }
+        }
+        &_submit {
+            &:hover {
+                width: 100%;
+                height: 55px;
+                font-size: 16px;
+                box-shadow: none;
+            }
+        }
+        &_mini {
+            &:hover {
+                width: 131px;
+                height: 40px;
+                font-size: 14px
+            }
+        }
+    }
+    .catalog {
+        &__tab {
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
 }
 
 @media screen and ( max-width: 991px) {
@@ -18,6 +55,12 @@
                 width: 253px;
                 height: 46px;
                 font-size: 14px;
+                &:hover {
+                    width: 253px;
+                    height: 46px;
+                    font-size: 14px;
+                    box-shadow: none;
+                }
             }
         }
         &__link {
@@ -89,9 +132,16 @@
         &__subheader {
             font-size: 22px;
         }
-        .button_main {
-            width: 280px;
-            height: 46px;
+        .button {
+            &_main {
+                width: 280px;
+                height: 46px;
+                &:hover {
+                    width: 280px;
+                    height: 46px;
+                    box-shadow: none;
+                }
+            }
         }
         &__link {
             font-size: 14px;
@@ -126,10 +176,18 @@
                 font-size: 12px;
             }
         }
-        .button_submit {
-            width: 240px;
-            height: 45px;
-            font-size: 14px;
+        .button {
+            &_submit {
+                width: 240px;
+                height: 45px;
+                font-size: 14px;
+                &:hover {
+                    width: 240px;
+                    height: 45px;
+                    font-size: 14px;
+                    box-shadow: none;
+                }
+            }
         }
     }
     .carousel {
@@ -161,6 +219,9 @@
         &__tab {
             width: 160px;
             font-size: 15px;
+            &:hover {
+                box-shadow: none;
+            }
         }
         &-item {
             &:nth-child(3), &:nth-child(5) {
@@ -200,6 +261,11 @@
             text-align: center;
         }
     }
+    .footer {
+        &__info {
+            width: 100%;
+        }
+    }
 }
 
 @media screen and ( max-width: 575px) {
@@ -231,9 +297,16 @@
                 width: 35px;
             }
         }
-        .button_main {
-            width: 260px;
-            height: 42px;
+        .button {
+            &_main {
+                width: 260px;
+                height: 42px;
+                &:hover {
+                    width: 260px;
+                    height: 42px;
+                    box-shadow: none;
+                }
+            }
         }
     }
     .advantages {
@@ -278,10 +351,23 @@
             height: 42px;
             font-size: 10px;
             line-height: 12px;
+            &:hover {
+                box-shadow: none;
+            }
             div {
                 margin-top: 8px;
                 br {
                     display: block;
+                }
+            }
+        }
+        .buttons {
+            &__mini {
+                &:hover {
+                    width: 131px;
+                    height: 40px;
+                    font-size: 14px;
+                    box-shadow: none;
                 }
             }
         }
@@ -290,6 +376,21 @@
         }
         &-item {
             margin-right: 0;
+        }
+    }
+    .footer {
+        &__addr {
+            font-size: 18px;
+        }
+        &__phone {
+            font-size: 17px;
+        }
+        &__social-item {
+            &:hover {
+                box-shadow: none;
+                width: 50px;
+                height: 50px;
+            }
         }
     }
 }
