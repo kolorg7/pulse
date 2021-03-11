@@ -131,28 +131,30 @@
             transform: translateX(0%);
             padding-right: 20px;
             transition: 0.5s all;
-            padding-left: 19px;
             margin-bottom: 0;
-            list-style-type: none;
             &_active {
                 transform: translateX(-100%);
                 margin-left: 0px;
             }
-            li {
-                position: relative;
-                font-size: 14px;
-                line-height: 1.2;
-                font-weight: 300;
-                color: #555555;
-                margin-top: 21px;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 5px;
-                    height: 5px;
-                    background-color: $main-color;
-                    left: -20px;
-                    top: 5px;
+            ul {
+                list-style-type: none;
+                
+                li {
+                    position: relative;
+                    font-size: 14px;
+                    line-height: 1.2;
+                    font-weight: 300;
+                    color: #555555;
+                    margin-top: 21px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        background-color: $main-color;
+                        left: -20px;
+                        top: 5px;
+                    }
                 }
             }
         }
@@ -161,7 +163,7 @@
             left: 50%;
             transform: translateX(calc(-50% - 19px));
             display: block;
-            margin-top: 65px;
+            margin-top: 49px;
             font-size: 14px;
             font-weight: 500;
             text-decoration: underline;
