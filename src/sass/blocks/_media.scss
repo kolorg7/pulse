@@ -38,6 +38,10 @@
             }
         }
     }
+    .pageup {
+        bottom: 30px;
+        right: 30px;
+    }
 }
 
 @media screen and ( max-width: 991px) {
@@ -128,6 +132,10 @@
 		-ms-animation: none !important;
 		animation: none !important;
 	}
+    .pageup {
+        bottom: 20px;
+        right: 20px;
+    }
 }
 
 @media screen and ( max-width: 767px) {
@@ -282,6 +290,10 @@
             width: 100%;
         }
     }
+    .pageup {
+        bottom: 15px;
+        right: 15px;
+    }
 }
 
 @media screen and ( max-width: 575px) {
@@ -313,14 +325,19 @@
                 width: 38px;
             }
         }
+        &__link {
+            font-size: 15px;
+        }
         .button {
             &_main {
                 width: 260px;
                 height: 42px;
+                font-size: 15px;
                 &:hover {
                     width: 260px;
                     height: 42px;
                     box-shadow: none;
+                    font-size: 15px;
                 }
             }
         }
@@ -398,6 +415,11 @@
             margin-right: 0;
         }
     }
+    .modal {
+        &__close {
+                right: 40px;
+        }
+    }
     .footer {
         &__addr {
             font-size: 18px;
@@ -420,12 +442,8 @@
             font-size: 30px;
         }
     }
-}
-
-@media screen and ( max-width: 575px) {
-    .modal {
-        &__close {
-                right: 40px;
-        }
+    .pageup {
+        bottom: 8px;
+        right: 8px;
     }
 }
