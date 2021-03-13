@@ -176,6 +176,7 @@
                     width: 300px;
                     height: 50px;
                     box-shadow: none;
+                    font-size: 16px;
                 }
             }
         }
@@ -417,7 +418,7 @@
     }
     .modal {
         &__close {
-                right: 35px;
+                right: 5px;
                 top: 5px;
                 font-size: 35px;
         }
@@ -440,5 +441,16 @@
     .pageup {
         bottom: 8px;
         right: 8px;
+    }
+}
+
+
+@media screen and ( max-width: 374px) {
+    .modal {
+        &__close {
+                right: 35px;
+                top: 5px;
+                font-size: 35px;
+        }
     }
 }
