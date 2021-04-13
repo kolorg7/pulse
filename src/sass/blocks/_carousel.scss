@@ -3,20 +3,11 @@
     &__inner {
         width: 750px;
         margin: 0 auto;
-        .slick-track {
-            .slick-slide {
-                &:nth-child(2) {
-                    img {
-                        margin-top: 27px;
-                    }
-                }
-                &:nth-child(4) {
-                    img {
-                        margin-top: 69px;
-                    }
-                }
-            }
-        }
+    }
+    .slick-slide {
+        height: 580px;
+        display: flex;
+        align-items: center;
     }
     .slick-prev, .slick-next {
         position: absolute;

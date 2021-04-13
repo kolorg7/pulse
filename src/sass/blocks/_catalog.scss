@@ -138,7 +138,6 @@
             }
             ul {
                 list-style-type: none;
-                
                 li {
                     position: relative;
                     font-size: 14px;
@@ -154,6 +153,9 @@
                         background-color: $main-color;
                         left: -20px;
                         top: 5px;
+                    }
+                    &:nth-child(3) {
+                        width: 224px;
                     }
                 }
             }

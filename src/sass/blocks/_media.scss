@@ -1,9 +1,6 @@
 @media screen and ( max-width: 1200px) {
     .button {
         &:hover {
-            width: 150px;
-            height: 30px;
-            font-size: 12px;
             box-shadow: none;
         }
         &_main {
@@ -60,12 +57,6 @@
                 width: 253px;
                 height: 46px;
                 font-size: 14px;
-                &:hover {
-                    width: 253px;
-                    height: 46px;
-                    font-size: 14px;
-                    box-shadow: none;
-                }
             }
         }
         &__link {
@@ -103,11 +94,10 @@
     .carousel {
         &__inner {
             width: 700px;
-            .slick-track {
-                .slick-slide {
-                    img {
-                        width: 100%;
-                    }
+            .slick-slide {
+                height: 500px;
+                img {
+                    width: 100%;
                 }
             }
         }
@@ -152,12 +142,6 @@
                 width: 300px;
                 height: 50px;
                 font-size: 16px;
-                &:hover {
-                    width: 300px;
-                    height: 50px;
-                    box-shadow: none;
-                    font-size: 16px;
-                }
             }
         }
         &__link {
@@ -196,22 +180,8 @@
     .carousel {
         &__inner {
             width: 500px;
-            .slick-track {
-                .slick-slide {
-                    img {
-                        width: 100%;
-                    }
-                    &:nth-child(2) {
-                        img {
-                            margin-top: 10px;
-                        }
-                    }
-                    &:nth-child(4) {
-                        img {
-                            margin-top: 26px;
-                        }
-                    }
-                }
+            .slick-slide {
+                height: 400px;
             }
         }
     }
@@ -303,12 +273,6 @@
                 width: 260px;
                 height: 42px;
                 font-size: 15px;
-                &:hover {
-                    width: 260px;
-                    height: 42px;
-                    box-shadow: none;
-                    font-size: 15px;
-                }
             }
         }
     }
@@ -344,8 +308,8 @@
     .carousel {
         &__inner {
             width: 300px;
-            img {
-                width: 100%;
+            .slick-slide {
+                height: 300px;
             }
         }
     }
@@ -368,16 +332,6 @@
                 }
             }
         }
-        .buttons {
-            &__mini {
-                &:hover {
-                    width: 131px;
-                    height: 40px;
-                    font-size: 14px;
-                    box-shadow: none;
-                }
-            }
-        }
         &_content {
             margin-top: 50px;
         }
@@ -386,10 +340,19 @@
         }
     }
     .modal {
+        width: 305px;
         &__close {
-                right: 5px;
+                right: 10px;
                 top: 5px;
-                font-size: 35px;
+                font-size: 30px;
+        }
+        .error {
+            font-size: 15px;
+        }
+        .button {
+            &_submit {
+                font-size: 15px;
+            }
         }
     }
     .footer {
@@ -410,16 +373,5 @@
     .pageup {
         bottom: 8px;
         right: 8px;
-    }
-}
-
-
-@media screen and ( max-width: 374px) {
-    .modal {
-        &__close {
-                right: 35px;
-                top: 5px;
-                font-size: 35px;
-        }
     }
 }
