@@ -341,6 +341,7 @@
     }
     .modal {
         width: 305px;
+        padding: 20px;
         &__close {
                 right: 10px;
                 top: 5px;
@@ -373,5 +374,10 @@
     .pageup {
         bottom: 8px;
         right: 8px;
+    }
+    .button {
+        &_submit {
+            height: 50px;
+        }
     }
 }
